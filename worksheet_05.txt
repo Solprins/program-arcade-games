@@ -22,7 +22,9 @@ Chapter 05 Worksheet
  3. Explain how WHITE = (255, 255, 255) represents a color.
  
 	Answer:
-	White is the result of red, green and blue used at their maximum capacity. Each color consist of a combination of red, green and blue which can have a value between 0 and 255 - with 0 being no color and 255 being full color.
+	White is the result of red, green and blue used at their maximum capacity. 
+	Each color consist of a combination of red, green and blue which can have a value between 0 and 255
+	- with 0 being no color and 255 being full color.
  
  4. When do we use variable names for colors in all upper-case, and when do we
     use variable names for colors in all lower-case? (This applies to all variables,
@@ -35,7 +37,8 @@ Chapter 05 Worksheet
  5. What does the pygame.display.set_mode() function do?
  
 	Answer:
-	This function will display the surface that we use for our graphics - this will typically be a window that we can draw upon. It is possible to have more than one window, but usually a game only have one window in windowed mode.
+	This function will display the surface that we use for our graphics - this will typically be a window that we can draw upon. 
+	It is possible to have more than one window, but usually a game only have one window in windowed mode.
  
  6. What does this for event in pygame.event.get() loop do?
 	
@@ -45,7 +48,8 @@ Chapter 05 Worksheet
  7. What is pygame.time.Clock used for?
  
 	Answer: 
-	This function will control how many times the frame will update per second. The higher the frame rate the faster the game will update what is happening on the screen.
+	This function will control how many times the frame will update per second. 
+	The higher the frame rate the faster the game will update what is happening on the screen.
  
  8. For this line of code: (3 pts)
      
@@ -57,7 +61,8 @@ Chapter 05 Worksheet
     * What does 5 do?
      
 	 Answer:
-	 screen will tell the function in what window to draw the line. Usually we only have one window, but it is possible to have more than one surface.
+	 screen will tell the function in what window to draw the line. Usually we only have one window, 
+	 but it is possible to have more than one surface.
 	 [0, 0] are the starting coordinates for the line.
 	 [100, 100] are the ending coordinates for the line.
 	 5 is the width of the line.
@@ -104,7 +109,8 @@ Chapter 05 Worksheet
     the start of the program. Why is this? You may need to ask.
 	
 	Answer:
-	It is only necessary to specify what font to use one time. It is unnecessary use of CPU power to keep telling the computer what font to use. Therefore it should be outside the main loop.
+	It is only necessary to specify what font to use one time. It is unnecessary use of CPU power to keep telling the computer what font to use.
+	Therefore it should be outside the main loop.
  
 15. What are the coordinates of the polygon that the code below draws?
      
@@ -119,7 +125,8 @@ Chapter 05 Worksheet
 16. What does pygame.display.flip() do?
 
 	Answer:
-	The flip function "flips" the canvas from outside the screen onto the screen. Everything that was drawn up until this point could not be seen yet, but now it will be shown on the screen. "Flipped" onto the screen.
+	The flip function "flips" the canvas from outside the screen onto the screen.
+	Everything that was drawn up until this point could not be seen yet, but now it will be shown on the screen. "Flipped" onto the screen.
  
 17. What does pygame.quit() do?
 
