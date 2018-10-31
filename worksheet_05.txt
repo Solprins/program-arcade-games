@@ -1,0 +1,141 @@
+
+
+
+Explain how WHITE = (255, 255, 255) represents a color.
+
+
+
+Chapter 05 Worksheet
+ 
+     
+    Reminder: Please use full sentences, capital letters, and proper grammar
+    where appropriate.
+     
+ 1. Explain how the computer coordinate system differs from the standard Cartesian
+    coordinate system. There are two main differences. List both.
+	
+	Answer:
+	1.1 The Y-axis positive direction is from top to bottom in the computer coordinate system (reverse of the Cartesian coordinate system).
+	1.2 In Cartesian the main quadrant is upper right, but in the computer coordinate system the main quadrant is lower right.	
+ 
+ 2. Before a Python Pygame program can use any functions
+    like pygame.display.set_mode(), what two lines of code must occur first?
+	
+	Answer:
+	import pygame
+	pygame.init()
+
+ 
+ 3. Explain how WHITE = (255, 255, 255) represents a color.
+ 
+	Answer:
+	White is the result of red, green and blue used at their maximum capacity. Each color consist of a combination of red, green and blue which can have a value between 0 and 255 - with 0 being no color and 255 being full color.
+ 
+ 4. When do we use variable names for colors in all upper-case, and when do we
+    use variable names for colors in all lower-case? (This applies to all variables,
+    not just colors.)
+	
+	Answer:
+	4.1 All upper-case is for constants, variables that don't change.
+	4.2 All lower-case is for colors that can change.
+ 
+ 5. What does the pygame.display.set_mode() function do?
+ 
+	Answer:
+	This function will display the surface that we use for our graphics - this will typically be a window that we can draw upon. It is possible to have more than one window, but usually a game only have one window in windowed mode.
+ 
+ 6. What does this for event in pygame.event.get() loop do?
+	
+	Answer: 
+	This loop will check for any user input like keyboard input or mouse input from the user.
+ 
+ 7. What is pygame.time.Clock used for?
+ 
+	Answer: 
+	This function will control how many times the frame will update per second. The higher the frame rate the faster the game will update what is happening on the screen.
+ 
+ 8. For this line of code: (3 pts)
+     
+    pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
+     
+    * What does screen do?
+    * What does [0, 0] do?
+    * What does [100, 100] do?
+    * What does 5 do?
+     
+	 Answer:
+	 screen will tell the function in what window to draw the line. Usually we only have one window, but it is possible to have more than one surface.
+	 [0, 0] are the starting coordinates for the line.
+	 [100, 100] are the ending coordinates for the line.
+	 5 is the width of the line.
+ 
+ 9. What is the best way to repeat something over and over in a drawing?
+ 
+	Answer:
+	To use a loop. This could be a while or a for loop depending on the circumstances.
+ 
+10. When drawing a rectangle, what happens if the specified line width is zero?
+
+	Answer:
+	The line will not be seen on the screen. Nothing will be drawn.
+ 
+11. Describe the ellipse drawn in the code below.
+    * What is the x, y of the origin coordinate?
+    * What does the origin coordinate specify? The center of the circle?
+    * What is the length and the width of the ellipse?
+     
+     
+    pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
+     
+	Answer:
+	The x, y of the origin coordinate is [20, 20].
+	The origin coordinate specify the upper left corner of the rectangle.
+	The length is 100 and width is 250 of the ellipse.
+	 
+12. When drawing an arc, what additional information is needed over drawing
+    an ellipse?
+
+	Answer:
+	Starting angle and ending angle measured in radians.
+	
+13. Describe, in general, what are the three steps needed when printing text to
+    the screen using graphics?
+ 
+	Answer:
+	13.1 Define a variable to specify what font you will print text with.
+	13.2 Make the "stamp" that you will use on the screen. This stamp will cointain the string to be stamped on the screen.
+	13.3 "Stamp" or blit the screen with what you have prepared in step 2. Here you also specify where to use the "stamp".
+ 
+14. When drawing text, the first line of the three lines needed to draw text
+    should actually be outside the main program loop. It should only run once at
+    the start of the program. Why is this? You may need to ask.
+	
+	Answer:
+	It is only necessary to specify what font to use one time. It is unnecessary use of CPU power to keep telling the computer what font to use. Therefore it should be outside the main loop.
+ 
+15. What are the coordinates of the polygon that the code below draws?
+     
+    pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
+    
+	Answer:
+	[50,100]
+	[0,200]
+	[200,200]
+	[100,50]
+	
+16. What does pygame.display.flip() do?
+
+	Answer:
+	The flip function "flips" the canvas from outside the screen onto the screen. Everything that was drawn up until this point could not be seen yet, but now it will be shown on the screen. "Flipped" onto the screen.
+ 
+17. What does pygame.quit() do?
+
+	Answer:
+	The quit function will ensure the window closes correctly and without lag.
+ 
+18. Look up on-line how the pygame.draw.circle works. Get it working
+    and paste a working sample here. I only need the one line of code that draws the
+    circle, but make sure it is working by trying it out in a full working program.
+	
+	Answer:
+	pygame.draw.circle (screen, RED, [400, 400], 300, 100)
