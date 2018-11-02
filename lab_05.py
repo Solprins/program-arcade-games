@@ -33,6 +33,9 @@ PI = math.pi
  
 # Select the font to use with a path, size - this enables you to ship it to others
 font = pygame.font.Font("C:/Windows/Fonts/Graphik-Super.ttf", 50)
+# If the above font doesn't work on your pc, then use the font code line below:
+# Select the font to use, size, bold, italics
+# font = pygame.font.SysFont('Calibri', 25, True, False)
  
 # Set the width and height of the screen [width, height]
 size = (1400, 700)
@@ -117,12 +120,12 @@ while not done:
     score = 1000000
     # Render the text. "True" means anti-aliased text.
     # Note: This line creates an image of the letters,
-    # but does not put it on the screen yet.
+    # but does not put it on the screen yet. You prepare the "stamp".
     text2 = font.render("SCORE: " + str(score), True, WHITE)
-    # Put the image of the text on the screen
+    # Put the image of the text on the screen. Use the "stamp" on the screen.
     screen.blit(text2, [75, 650])
 
-    # --- Go ahead and update the screen with what we've drawn.
+    # --- Go ahead and update the screen with what we've drawn. "Flip" the canvas so the audience can see what you have drawn.
     pygame.display.flip()
  
     # --- Limit to 60 frames per second
