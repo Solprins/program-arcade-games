@@ -8,7 +8,8 @@
  
  Explanation video: http://youtu.be/vRB_983kUMc
 """
- 
+ # A drawing of a Star Shooter Game
+
 import pygame
 import math
 
