@@ -208,7 +208,6 @@ RED = (255, 0, 0)
  
 pygame.init()
  
-# Set the width and height of the screen [width, height]
 # Input: The user can choose the shape to be drawn
 print()
 print("Which shapes do you want to draw on the screen?: ")
@@ -226,6 +225,7 @@ elif choice.upper() == "C":
     shape = "Line"
 else:
     shape = "Rectangle"
+# Set the width and height of the screen [width, height]
 # Input: The user can decide the size of the screen 
 print()
 screen_width = int(input("How wide do you want the screen to be? Chose from 100 to 1400: "))
