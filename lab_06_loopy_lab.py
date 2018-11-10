@@ -171,6 +171,40 @@ for i in range(1,number+1):
 # Next row
     print()
 
+# Part 3 with tip from teacher to use print(format(argument, "02d"),end=" ")
+# Also the print spaces code is altered accordingly
+### Input from user
+number = int(input("Please input any number up to 50. Then I will show you a nice pattern based on your number: "))
+# -- Upper half
+for i in range(1,number+1):
+# Count up
+    for j in range(i,number+1):
+        uneven = j*2-1
+        print(format(uneven,"02d"),end=" ")
+# Print spaces between count up and count down
+    for j in range(i*3-3):
+        print(" ",end=" ")
+# Count down
+    for j in range(number,i-1,-1):
+        uneven = j*2-1
+        print(format(uneven,"02d"),end=" ")
+# Next row
+    print()
+# -- Lower half
+for i in range(1,number+1):
+# Count up
+    for j in range(number-i+1,number+1):
+        uneven = j*2-1
+        print(format(uneven,"02d"),end=" ")
+# Print spaces between count up and count down
+    for j in range((number-i)*3,0,-1):
+        print(" ",end=" ")
+# Count down
+    for j in range(number,number-i,-1):
+        uneven = j*2-1
+        print(format(uneven,"02d"),end=" ")
+# Next row
+    print()
 
 # 6.4 Part 4
 # Start with the pygame template code:

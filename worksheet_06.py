@@ -102,6 +102,10 @@ while x <= 0:
     if x <=0:
         print("Too small. Enter a number greater than zero: ")
 
+# Improved answer taking into consideration a while loop evaluates the loop condition every time:
+x = float(input("Enter a number greater than zero: "))
+while x <= 0:
+    x = float(input("Too small. Enter a number greater than zero: "))
 
 # 6. Fix the following code:
     
