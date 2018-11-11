@@ -63,62 +63,88 @@ room_list = []
 # Because sometimes you need a value, other than zero, that represents )
 
 # The goal is to find the room called Sahasrara meaning the top of the head
-muladhara = ["""You are standing in a big room and there is a big sign saying Muladhara
- with 4 doors pointing north, east, south and west. You are are an 
-adventurer tasked with finding the Chakra called Sahasrara. This chakra is located at the top of the head.
-The Northern door is a simple wooden door with no title
-The Eastern door is a simple wooden door with no title
-The Southern door is a simple wooden door with no title
-The Western door is a simple wooden door with no title
-""", "2", "4",
- "6", "8"]
+sahasrara = ["""Sahasrara:
+You are standing in a big room and there is a big sign saying Sahasrara in the middle of the room.
+You have completed this adventure! You have found the Sahasrara chakra!
+Type q to quit the game or you can continue to explore the chakra rooms!
+There is a door pointing south. 
+""", None, None, 1, None]
 
 # 3
 # Append this room to the room list.
-room_list.append(muladhara)
+room_list.insert(1, sahasrara)
 
 # 4
 # Repeat the prior two steps for each room you want to create. Just re-use the room variable.
 
-empty_room2 = ["""Empty_room2 You are standing in a room with 4 doors pointing north, east, south and west. You are are an 
-adventurer tasked with finding the Chakra called Sahasrara. This chakra is located at the top of the head.
-The Northern door is a beautiful golden door with the title Ajna
-The Eastern door is a beautiful golden door with the title Svadisthana
-The Southern door is a beautiful golden door with the title Muladhara
-The Western door is a beautiful golden door with the title Vishuddha
-""", "3", "1",
- "9", "10"]
-room_list.append(empty_room2)
+ajna = ["""Ajna:
+You are standing in a big room and there is a big sign saying Ajna in the middle of the room.
+There are 3 doors pointing north and south. 
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+""", 0, None, 3, None]
+room_list.append(ajna)
 
-empty_room4 = ["""Empty_room4 You are standing in a room with 4 doors pointing north, east, south and west. You are are an 
-adventurer tasked with finding the Chakra called Sahasrara. This chakra is located at the top of the head.
-The Northern door is a beautiful golden door with the title Ajna
-The Eastern door is a beautiful golden door with the title Svadisthana
-The Southern door is a beautiful golden door with the title Muladhara
-The Western door is a beautiful golden door with the title Vishuddha
-""", "3", "1",
- "9", "10"]
-room_list.append(empty_room4)
+vishuddha = ["""Vishuddha:
+You are standing in a big room and there is a big sign saying Vishuddha in the middle of the room.
+There are 2 doors pointing east and south. 
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+""", None, 3, 5, None]
+room_list.append(vishuddha)
 
-empty_room6 = ["""Empty_room6 You are standing in a room with 4 doors pointing north, east, south and west. You are are an 
-adventurer tasked with finding the Chakra called Sahasrara. This chakra is located at the top of the head.
-The Northern door is a beautiful golden door with the title Ajna
-The Eastern door is a beautiful golden door with the title Svadisthana
-The Southern door is a beautiful golden door with the title Muladhara
-The Western door is a beautiful golden door with the title Vishuddha
-""", "3", "1",
- "9", "10"]
-room_list.append(empty_room6)
+empty_room3 = ["""
+You are standing in a big empty room.
+There are 4 doors pointing north, east, south and west.
+""", 1, 4, 6, 2]
+room_list.append(empty_room3)
 
-empty_room8 = ["""Empty_room8 You are standing in a room with 4 doors pointing north, east, south and west. You are are an 
-adventurer tasked with finding the Chakra called Sahasrara. This chakra is located at the top of the head.
-The Northern door is a beautiful golden door with the title Ajna
-The Eastern door is a beautiful golden door with the title Svadisthana
-The Southern door is a beautiful golden door with the title Muladhara
-The Western door is a beautiful golden door with the title Vishuddha
-""", "3", "1",
- "9", "10"]
-room_list.append(empty_room8)
+svadisthana = ["""Svadisthana:
+You are standing in a big room and there is a big sign saying Svadisthana in the middle of the room.
+There are 2 doors pointing south and west. 
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+""", None, None, 7, 3]
+room_list.append(svadisthana)
+
+empty_room5 = ["""
+You are standing in a big empty room.
+There are 3 doors pointing north, east and south. 
+""", 2, 6, 8, None]
+room_list.append(empty_room5)
+
+muladhara = ["""Muladhara:
+You are standing in a big room and there is a big sign saying Muladhara in the middle of the room.
+There are 4 doors pointing north, east, south and west. 
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+""", 3, 7, 9, 5]
+room_list.append(muladhara)
+
+empty_room7 = ["""
+You are standing in a big empty room.
+There are 3 doors pointing north, south and west.
+""", 4, None, 10, 6]
+room_list.append(empty_room7)
+
+anahata = ["""Anahata:
+You are standing in a big room and there is a big sign saying Anahata in the middle of the room.
+There are 2 doors pointing north and east. 
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+""", 5, 9, None, None]
+room_list.append(anahata)
+
+empty_room9 = ["""Sahasrara:
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+You are standing in a big empty room.
+There are 3 doors pointing north, east and west.
+To navigate input either n, e, s or w for the directions North, East, South and West.
+To quit the game input q.
+""", 6, 10, None, 8]
+room_list.append(empty_room9)
+
+manipura = ["""Manipura:
+You are standing in a big room and there is a big sign saying Manipura in the middle of the room.
+There are 2 doors pointing north and west. 
+You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
+""", 7, None, None, 9]
+room_list.append(manipura)
   
 # 5
 # Create a variable called current_room. Set it to zero.
@@ -148,7 +174,7 @@ current_room = 0
 # list in a list the index goes after the first index. Don't do this: [current_room[0]], do [current_room][0]
 # You are in a room. There is a passage to the north.
 
-current_room = room_list[0]
+#current_room = room_list[0]
 # print(current_room[0])
 
 
@@ -204,43 +230,52 @@ current_room = room_list[0]
 done = False
 choice = 0
 next_room = 0
+current_room = room_list[9]
 while not done:
     print()
-    # current_room = room_list[0]
     print(current_room[0])
     choice = input("Where do you want to go? ")
     
+    # Check if user wants to quit
+    if choice.upper() == "Q" or choice.upper() == "QUIT":
+        break
+
     # Check if user go North
-    if choice.upper() == "N" or choice.upper() == "North":
-        next_room = room_list[1]
+    elif choice.upper() == "N" or choice.upper() == "NORTH":
+        next_room = current_room[1]
         if next_room == None:
+            print()
             print("You can't go that way!")
         else:
-            current_room = next_room
+            # sub_room = current_room[1]
+            current_room = room_list[current_room[1]]
     
     # Check if user go East
-    elif choice.upper() == "E" or choice.upper() == "East":
-        next_room = room_list[2]
+    elif choice.upper() == "E" or choice.upper() == "EAST":
+        next_room = current_room[2]
         if next_room == None:
+            print()
             print("You can't go that way!")
         else:
-            current_room = next_room
+            current_room = room_list[current_room[2]]
 
     # Check if user go South
-    elif choice.upper() == "S" or choice.upper() == "South":
-        next_room = room_list[3]
+    elif choice.upper() == "S" or choice.upper() == "SOUTH":
+        next_room = current_room[3]
         if next_room == None:
+            print()
             print("You can't go that way!")
         else:
-            current_room = next_room
+            current_room = room_list[current_room[3]]
 
     # Check if user go West
-    elif choice.upper() == "W" or choice.upper() == "West":
-        next_room = room_list[4]
+    elif choice.upper() == "W" or choice.upper() == "WEST":
+        next_room = current_room[4]
         if next_room == None:
+            print()
             print("You can't go that way!")
         else:
-            current_room = next_room
+            current_room = room_list[current_room[4]]
 
     # Print a message if the user didn't make a correct choice
     else:
@@ -255,7 +290,22 @@ while not done:
 
 
 # 20
-
+# Test your program. Make sure you have enough of a description that someone running the program will no what direction to go.
+# Don't say "You are in the kitchen." Instead say "You are in the kitchen. There is a door to the north."
 
 # 21
+# Optional: Add a quit command. Make sure that the program works for upper and lower case directions. 
+# Have the program work if the user types in “north” or “n”.
+# Spend a little time to make this game interesting. Don't simply create an “East room” and a “West room.” That's boring.
 
+# Also spend a little time to double check spelling and grammar. Without a word processor checking your writing, 
+# it is important to be careful.
+
+# Use \n to add carriage returns in your descriptions so they don't print all on one line. 
+# Don't put spaces around the \n, or the spaces will print.
+
+# What I like about this program is how easy it is to expand into a full game. 
+# Using all eight cardinal directions (including “NorthWest”), along with “up” and “down” is rather easy.
+# Managing an inventory of objects that can exist in rooms, be picked up, and dropped is also a matter of keeping lists.
+
+# Expanding this program into a full game is one of the two options for the final lab in this course.
