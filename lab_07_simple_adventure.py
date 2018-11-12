@@ -79,7 +79,7 @@ room_list.insert(1, sahasrara)
 
 ajna = ["""Ajna:
 You are standing in a big room and there is a big sign saying Ajna in the middle of the room.
-There are 3 doors pointing north and south. 
+There are 2 doors pointing north and south. 
 You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
 """, 0, None, 3, None]
 room_list.append(ajna)
@@ -130,7 +130,7 @@ You are are an adventurer tasked with finding the chakra called Sahasrara. This 
 """, 5, 9, None, None]
 room_list.append(anahata)
 
-empty_room9 = ["""Sahasrara:
+empty_room9 = ["""Starting Room:
 You are are an adventurer tasked with finding the chakra called Sahasrara. This chakra is located at the top of the head.
 You are standing in a big empty room.
 There are 3 doors pointing north, east and west.
@@ -227,6 +227,8 @@ current_room = 0
 # 17
 # Add elif statements to handle east, south, and west. 
 # Add an else statement to let the user know the program doesn't understand what she typed.
+for i in range(50):
+    print()
 done = False
 choice = 0
 next_room = 0
